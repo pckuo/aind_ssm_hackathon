@@ -10,7 +10,11 @@ COPY git-askpass /
 
 RUN pip3 install -U --no-cache-dir \
     ipykernel \
-    ipympl
+    ipympl \
+    torch \
+    torchvision \
+    torchaudio \
+    pyro-ppl
 
 
 COPY postInstall /
