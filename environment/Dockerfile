@@ -16,6 +16,5 @@ RUN pip3 install -U --no-cache-dir --upgrade-strategy=only-if-needed \
     -e git+https://github.com/AllenNeuralDynamics/aind-dynamic-foraging-basic-analysis.git@769b76f66fe63a46af105f106ed367b025722656#egg=aind-dynamic-foraging-basic-analysis \
     -e git+https://github.com/AllenNeuralDynamics/aind-dynamic-foraging-data-utils.git@719057be98436feff33fb2c034c7ee180e9c8d7d#egg=aind-dynamic-foraging-data-utils
 
-
 COPY postInstall /
 RUN /postInstall
