@@ -34,9 +34,7 @@
 					"version": "0.20.0"
 				}
 			],
-			"options": {
-				"upgrade_strategy": "only-if-needed"
-			},
+			"options": {},
 			"pre_install_options": {}
 		}
 	}

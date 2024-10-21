@@ -1,4 +1,4 @@
-# hash:sha256:f91973dd30b9cb261d208254ed62b9faf09ca968ca94eca501311698b1de4729
+# hash:sha256:3119bd2f490e9e9c3586ab8547dbb157ec8b941d8e2383c5bb88e3dafa9f1f64
 ARG REGISTRY_HOST
 FROM $REGISTRY_HOST/codeocean/jupyterlab:3.6.1-miniconda4.12.0-python3.9-ubuntu20.04
 
@@ -8,7 +8,7 @@ ARG GIT_ASKPASS
 ARG GIT_ACCESS_TOKEN
 COPY git-askpass /
 
-RUN pip3 install -U --no-cache-dir --upgrade-strategy=only-if-needed \
+RUN pip3 install -U --no-cache-dir \
     ipympl==0.9.4 \
     pyro-ppl==1.9.1 \
     torch==2.5.0 \
