@@ -21,9 +21,9 @@ cd ssm
 pip install numpy cython
 pip install -e .
 cd -
-# Install SSM (State Space Models)
-git clone https://github.com/lindermanlab/ssm
-cd ssm
-pip install numpy cython
-pip install -e .
-cd -
+# # Install SSM (State Space Models)
+# git clone https://github.com/lindermanlab/ssm
+# cd ssm
+# pip install numpy cython
+# pip install -e .
+# cd -
