@@ -7,24 +7,11 @@
 		"git_ask_pass": true
 	},
 	"installers": {
-		"apt": {
-			"packages": [
-				{
-					"name": "g++",
-					"version": "4:11.2.0-1ubuntu1"
-				},
-				{
-					"name": "gcc",
-					"version": "4:11.2.0-1ubuntu1"
-				}
-			],
-			"install_software_properties_common": true
-		},
 		"pip3": {
 			"packages": [
 				{
-					"name": "cython",
-					"version": "3.0.11"
+					"name": "dynamax[notebooks]",
+					"version": "0.1.4"
 				},
 				{
 					"name": "git+https://github.com/AllenNeuralDynamics/aind-dynamic-foraging-basic-analysis.git#egg=aind-dynamic-foraging-basic-analysis",
