@@ -1,6 +1,6 @@
 {
 	"version": 1,
-	"base_image": "codeocean/jupyterlab:3.6.1-miniconda4.12.0-python3.9-ubuntu20.04",
+	"base_image": "codeocean/pytorch-cpu-only:2.4.0",
 	"post_install": true,
 	"options": {
 		"registry_host_arg": true,
@@ -24,14 +24,6 @@
 				{
 					"name": "pyro-ppl",
 					"version": "1.9.1"
-				},
-				{
-					"name": "torch",
-					"version": "2.5.0"
-				},
-				{
-					"name": "torchvision",
-					"version": "0.20.0"
 				}
 			],
 			"options": {},
