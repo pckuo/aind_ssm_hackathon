@@ -1,4 +1,4 @@
-# hash:sha256:870635d6f36a8a680eaace63180c624d853617d3a9c14a89ace29f6c2e054fd2
+# hash:sha256:688afca9be4e99b6dac726ca0ea45fbfe0a32b8565f7329312b1f78dabf67dc6
 ARG REGISTRY_HOST
 FROM $REGISTRY_HOST/codeocean/pytorch-cpu-only:2.4.0
 
@@ -8,7 +8,14 @@ ARG GIT_ASKPASS
 ARG GIT_ACCESS_TOKEN
 COPY git-askpass /
 
-RUN pip3 install -U --no-cache-dir \
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        g++=4:11.2.0-1ubuntu1 \
+        gcc=4:11.2.0-1ubuntu1 \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN pip3 install -U --upgrade-strategy=only-if-needed \
+    cython==3.0.11 \
     ipympl==0.9.4 \
     pyro-ppl==1.9.1 \
     -e git+https://github.com/AllenNeuralDynamics/aind-dynamic-foraging-basic-analysis.git@5543aa88f3585200e4dc896c1a366de3803c0166#egg=aind-dynamic-foraging-basic-analysis \

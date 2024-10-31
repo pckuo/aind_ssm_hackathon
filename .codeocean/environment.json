@@ -7,8 +7,25 @@
 		"git_ask_pass": true
 	},
 	"installers": {
+		"apt": {
+			"packages": [
+				{
+					"name": "g++",
+					"version": "4:11.2.0-1ubuntu1"
+				},
+				{
+					"name": "gcc",
+					"version": "4:11.2.0-1ubuntu1"
+				}
+			],
+			"install_software_properties_common": true
+		},
 		"pip3": {
 			"packages": [
+				{
+					"name": "cython",
+					"version": "3.0.11"
+				},
 				{
 					"name": "git+https://github.com/AllenNeuralDynamics/aind-dynamic-foraging-basic-analysis.git#egg=aind-dynamic-foraging-basic-analysis",
 					"version": "5543aa88f3585200e4dc896c1a366de3803c0166"
@@ -26,7 +43,10 @@
 					"version": "1.9.1"
 				}
 			],
-			"options": {},
+			"options": {
+				"upgrade_strategy": "only-if-needed",
+				"use_cache": true
+			},
 			"pre_install_options": {}
 		}
 	}
