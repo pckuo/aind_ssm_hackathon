@@ -26,14 +26,14 @@
 					"version": "0.9.4"
 				},
 				{
+					"name": "pydmd"
+				},
+				{
 					"name": "pyro-ppl",
 					"version": "1.9.1"
 				}
 			],
-			"options": {
-				"upgrade_strategy": "only-if-needed",
-				"use_cache": true
-			},
+			"options": {},
 			"pre_install_options": {}
 		}
 	}
