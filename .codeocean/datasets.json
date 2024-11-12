@@ -2,24 +2,8 @@
 	"version": 1,
 	"attached_datasets": [
 		{
-			"id": "36c5d055-d69d-44e8-8cad-6ad23c17f635",
-			"mount": "ecephys_753126_2024-10-15_12-20-35_sorted_2024-11-09_19-47-57"
-		},
-		{
-			"id": "5ad8d4e8-63e0-4b9b-8c77-d09c4d4ed8cb",
-			"mount": "ecephys_753126_2024-10-11_13-14-24_sorted_2024-11-09_19-18-21"
-		},
-		{
 			"id": "659b036d-a469-477d-ba62-95b81e2aac43",
 			"mount": "behavior_705599_2024-06-27_12-22-52_processed_sfn_rachel"
-		},
-		{
-			"id": "7d21faf7-1505-480d-839a-9ae0274951d7",
-			"mount": "ecephys_753126_2024-10-15_12-20-35"
-		},
-		{
-			"id": "e19f3078-6b3b-4b0a-9fd8-d41f21271c8c",
-			"mount": "ecephys_753126_2024-10-11_13-14-24"
 		}
 	]
 }
