@@ -41,12 +41,13 @@
 				{
 					"name": "pyro-ppl",
 					"version": "1.9.1"
+				},
+				{
+					"name": "seaborn",
+					"version": "0.13.2"
 				}
 			],
-			"options": {
-				"upgrade_strategy": "only-if-needed",
-				"use_cache": true
-			},
+			"options": {},
 			"pre_install_options": {}
 		}
 	}
