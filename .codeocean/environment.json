@@ -26,7 +26,8 @@
 					"version": "0.9.4"
 				},
 				{
-					"name": "pydmd"
+					"name": "pydmd",
+					"version": "2024.11.1"
 				},
 				{
 					"name": "pyro-ppl",
