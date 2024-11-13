@@ -1,4 +1,4 @@
-# hash:sha256:f0c1cd9e24702344b753ffffe7db831580ad0092a329b8f98bbc8656377dfcc5
+# hash:sha256:0cd78d9881682cf51989f36da936746e2ad41f23847a1a544034424a2c456639
 ARG REGISTRY_HOST
 FROM $REGISTRY_HOST/codeocean/pytorch-cpu-only:2.4.0
 
@@ -9,7 +9,6 @@ ARG GIT_ACCESS_TOKEN
 COPY git-askpass /
 
 RUN pip3 install -U --no-cache-dir \
-    dynamax[notebooks]==0.1.4 \
     ipympl==0.9.4 \
     pydmd==2024.11.1 \
     pyro-ppl==1.9.1 \
