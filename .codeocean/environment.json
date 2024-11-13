@@ -7,6 +7,19 @@
 		"git_ask_pass": true
 	},
 	"installers": {
+		"apt": {
+			"packages": [
+				{
+					"name": "g++",
+					"version": "4:11.2.0-1ubuntu1"
+				},
+				{
+					"name": "gcc",
+					"version": "4:11.2.0-1ubuntu1"
+				}
+			],
+			"install_software_properties_common": true
+		},
 		"pip3": {
 			"packages": [
 				{
@@ -36,9 +49,16 @@
 				{
 					"name": "spikeinterface[full,widgets]",
 					"version": "0.101.2"
+				},
+				{
+					"name": "wavpack-numcodecs",
+					"version": "0.2.1"
 				}
 			],
-			"options": {},
+			"options": {
+				"upgrade_strategy": "only-if-needed",
+				"use_cache": true
+			},
 			"pre_install_options": {}
 		}
 	}
